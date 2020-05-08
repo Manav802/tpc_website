@@ -1,0 +1,98 @@
+/*styles for all of the webpage*/
+.basic
+{
+	font-family: 'Lora', serif;
+}
+/* Navbar */
+.container
+{
+	background-color: #294a70;
+}
+.navbar
+{
+	background-color: #294a70;   /*background of navigation bar*/
+	font-size: 1.2rem;
+	padding: 8px 16px;
+	position: relative;
+	padding: 4px 16px;
+}
+.navbar-collapse
+{
+	display: inline-flex;
+}
+.nav-item:hover
+{
+	background-color: #ffab1f;   /* background colort of an itme on hover*/
+}
+.nav-item
+{
+	text-align: center;
+	margin: auto;
+	padding: 2px 20px;
+}
+.dropdown-menu
+{
+	background-color: #294a70;   /*background of dropdown-menu*/	
+}
+
+.dropdown-item:hover
+{
+	background-color: #ffab1f;  /* background-color on hover*/
+}
+
+.dropdown-item
+{
+	color:#ffffff;               /*text-color dropdown menu items*/
+}
+
+footer
+{
+	background-color: #294a70;
+    font-weight: lighter;
+    color: white;
+    text-align: center;
+}
+.footerHeader{
+    width:100%;
+    padding:1em;
+    background-color: #294a70;
+    text-align:center;
+    color:white;
+}
+
+footer div{
+	text-align: center;
+    padding-left:5px;
+    list-style:none;
+}
+footer p{
+    text-align : justify;
+    font-size : 15px;
+}
+footer iframe {
+    width:100%;
+    position:relative;
+    height:200px;
+}
+.sm{
+    display: inline;
+    margin-top: 5px;
+} 
+.sm a img {
+    width:32px;
+}
+.carousel
+{
+	text-align: center;
+}
+.carousel-inner
+{
+	
+	text-align: center;
+}
+
+.carousel-inner img
+{
+	width: 30%;
+	height: 100%;
+}
