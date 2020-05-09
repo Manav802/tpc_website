@@ -2,34 +2,27 @@
 .basic
 {
 	font-family: 'Lora', serif;
+	text-align: center;
 }
 /* Navbar */
-.container
-{
-	background-color: #294a70;
-}
 .navbar
 {
 	background-color: #294a70;   /*background of navigation bar*/
-	font-size: 1.2rem;
-	padding: 8px 16px;
-	position: relative;
-	padding: 4px 16px;
-}
-.navbar-collapse
-{
-	display: inline-flex;
+	font-size: 1.2rem;           /*ssets the font size of menu items*/
+	padding: 4px;           /*set padding in menu*/
 }
 .nav-item:hover
 {
 	background-color: #ffab1f;   /* background colort of an itme on hover*/
 }
+
 .nav-item
 {
 	text-align: center;
 	margin: auto;
-	padding: 2px 20px;
+	padding: 2px;
 }
+
 .dropdown-menu
 {
 	background-color: #294a70;   /*background of dropdown-menu*/	
@@ -37,62 +30,42 @@
 
 .dropdown-item:hover
 {
+	color: #ffffff; /*ovverides the links turining black*/
 	background-color: #ffab1f;  /* background-color on hover*/
 }
 
 .dropdown-item
 {
-	color:#ffffff;               /*text-color dropdown menu items*/
-}
-
-footer
-{
-	background-color: #294a70;
-    font-weight: lighter;
-    color: white;
-    text-align: center;
-}
-.footerHeader{
-    width:100%;
-    padding:1em;
-    background-color: #294a70;
-    text-align:center;
-    color:white;
-}
-
-footer div{
-	text-align: center;
-    padding-left:5px;
-    list-style:none;
-}
-footer p{
-    text-align : justify;
-    font-size : 15px;
-}
-footer iframe {
-    width:100%;
-    position:relative;
-    height:200px;
-}
-.sm{
-    display: inline;
-    margin-top: 5px;
-} 
-.sm a img {
-    width:32px;
+	color:#ffffff;  /*text-color dropdown menu items*/
 }
 .carousel
 {
-	text-align: center;
+	text-align: center;/*aligns the each item including the buttons */
 }
+
 .carousel-inner
 {
-	
-	text-align: center;
+	text-align: center; /*aligns the images */
 }
 
 .carousel-inner img
 {
-	width: 30%;
-	height: 100%;
+	width: 20%;        /*changing image size*/ 
+}
+
+.footerHeader
+{
+	background-color: #294a70; /*color of the footers background*/
+	color:#ffffff;  /*text color to white*/
+}
+
+.footerHeader iframe
+{
+	width: auto;  /* setting the size of the map to adjust according to the page*/
+	height: auto;  /* setting the size of the map to adjust according to the page*/
+}
+
+.footerHeader .container img
+{
+	width: 32px;      /*reducing the size of the icons*/
 }
