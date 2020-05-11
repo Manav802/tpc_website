@@ -3,6 +3,24 @@
 {
 	font-family: 'Lora', serif;
 	text-align: center;
+	background-color: #def4f0;
+}
+/*Logo*/
+
+.reduced-size
+{
+	width: 10rem;                  /*reducing logo size*/
+	height: 10rem;
+	padding: 1rem;                  /*adding padding*/
+	border-radius: 100%;           /*making images circular*/
+}
+.left
+{
+	text-align: left;              /*aligning the image*/
+}
+.right
+{
+	text-align: right;              /*aligning the image*/
 }
 /* Navbar */
 .navbar
