@@ -3,7 +3,6 @@
 {
 	font-family: 'Lora', serif;
 	text-align: center;
-	background-color: #def4f0;
 }
 /*Logo*/
 .reduced-size
@@ -18,6 +17,10 @@
 .right
 {
 	text-align: right;              /*aligning the image*/
+}
+.hide
+{
+	display:none;                   /* hides the logo on resize*/ 
 }
 /* Navbar */
 .navbar
