@@ -6,11 +6,8 @@
 	background-color: #def4f0;
 }
 /*Logo*/
-
 .reduced-size
 {
-	width: 10rem;                  /*reducing logo size*/
-	height: 10rem;
 	padding: 1rem;                  /*adding padding*/
 	border-radius: 100%;           /*making images circular*/
 }
