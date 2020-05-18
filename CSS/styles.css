@@ -7,7 +7,7 @@
 /*Logo*/
 .reduced-size
 {
-	padding: 1rem;                  /*adding padding*/
+	padding: 1rem;                 /*adding padding*/
 	border-radius: 100%;           /*making images circular*/
 }
 .left
@@ -27,7 +27,7 @@
 {
 	background-color: #294a70;   /*background of navigation bar*/
 	font-size: 1.2rem;           /*ssets the font size of menu items*/
-	padding: 4px;           /*set padding in menu*/
+	padding: 4px;                /*set padding in menu*/
 }
 .nav-item:hover
 {
@@ -48,17 +48,17 @@
 
 .dropdown-item:hover
 {
-	color: #ffffff; /*ovverides the links turining black*/
+	color: #ffffff;             /*ovverides the links turining black*/
 	background-color: #ffab1f;  /* background-color on hover*/
 }
 
 .dropdown-item
 {
-	color:#ffffff;  /*text-color dropdown menu items*/
+	color:#ffffff;              /*text-color dropdown menu items*/
 }
 .carousel
 {
-	text-align: center;/*aligns the each item including the buttons */
+	text-align: center; /*aligns the each item including the buttons */
 }
 
 .carousel-inner
