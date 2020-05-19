@@ -2,36 +2,37 @@
 .basic
 {
 	font-family: 'Lora', serif;
-	text-align: center;
 }
-/*Logo*/
+button:focus 
+{
+	outline:0;           /* Stops the blue outline on click*/
+}
+/*header*/
 .reduced-size
 {
 	padding: 1rem;                 /*adding padding*/
 	border-radius: 100%;           /*making images circular*/
 }
-.left
+
+.col-sm-4
 {
-	text-align: left;              /*aligning the image*/
+	text-align: center;	
 }
-.right
-{
-	text-align: right;              /*aligning the image*/
-}
-.hide
-{
-	display:none;                   /* hides the logo on resize*/ 
-}
-/* Navbar */
-.navbar
+/* Navbar*/
+.nav
 {
 	background-color: #294a70;   /*background of navigation bar*/
 	font-size: 1.2rem;           /*ssets the font size of menu items*/
 	padding: 4px;                /*set padding in menu*/
+	margin-bottom: 2px;
 }
 .nav-item:hover
 {
 	background-color: #ffab1f;   /* background colort of an itme on hover*/
+}
+.nav a
+{
+	color: white;
 }
 
 .nav-item
@@ -40,7 +41,69 @@
 	margin: auto;
 	padding: 2px;
 }
+/*Nav-menu and logo*/
+.right
+{
+	text-align: right;
+}
+.navbar-brand
+{
+	font-weight: bold;
+	font-size: 2rem;
+}
 
+/*Menu-button*/
+.menu-button
+{
+	background-color: #294a70;
+	font-weight: bold;
+	color: white;
+	font-size: 1.5rem;
+	margin-bottom: 3px;
+	border: none;
+}
+.navbar-toggler-icon
+
+{
+	color: white;
+}
+.menu-button:hover
+{
+	background-color:#ffab1f; 
+}
+.show-on-click
+{
+	display: none;
+}
+.nav-menu
+{
+	width: 70%;
+	background-color: #294a70;
+	text-align: center;
+	padding: 3px;
+	margin-top: 3px;
+	margin-bottom: 12px;
+	border-radius: 4%;
+}
+.nav-menu-item
+{
+	text-align: center;
+	margin: auto;
+	padding: 2px;
+	font-size: 1rem;
+	display: block;
+}
+.nav-menu>a
+{
+	text-decoration:none;
+	color: white;
+}
+.nav-menu-item:hover
+{
+	background-color: #ffab1f;
+}
+
+/*Dropdown menu additional features*/
 .dropdown-menu
 {
 	background-color: #294a70;   /*background of dropdown-menu*/	
@@ -56,6 +119,8 @@
 {
 	color:#ffffff;              /*text-color dropdown menu items*/
 }
+
+/*Carousel*/
 .carousel
 {
 	text-align: center; /*aligns the each item including the buttons */
@@ -73,6 +138,7 @@
 
 .footerHeader
 {
+	text-align: center;
 	background-color: #294a70; /*color of the footers background*/
 	color:#ffffff;  /*text color to white*/
 }
@@ -86,4 +152,21 @@
 .footerHeader .container img
 {
 	width: 32px;      /*reducing the size of the icons*/
+
+}
+
+/*media Queries to make the website mobile friendly*/
+@media (min-width: 676px)
+{
+	.hide-if-large-screen
+	{
+		display:none;                   /* hides the logo on resize*/ 
+	}
+}
+@media (max-width: 676px)
+{
+	.hide-if-small-screen
+	{
+		display:none;                   /* hides on resize*/ 
+	}
 }

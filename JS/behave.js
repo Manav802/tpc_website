@@ -1,15 +1,4 @@
-if($(window).width()>676)
+$(".menu-button").on("click",function () 
 {
-	$("#UIET-LOGO,#PU-LOGO").removeClass("hide");
-}
-$(window).on('resize', function()
-{
-	if($(window).width()<676)
-	{
-		$("#UIET-LOGO,#PU-LOGO").addClass("hide");
-	}
-	else
-	{
-		$("#UIET-LOGO,#PU-LOGO").removeClass("hide");
-	}
+	$(".nav-menu").toggleClass("show-on-click");
 })
