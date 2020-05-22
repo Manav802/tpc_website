@@ -1,11 +1,11 @@
 /*styles for all of the webpage*/
 .basic
 {
-	font-family: 'Lora', serif;
+	font-family: 'Lora', serif; 	/*setting the basic font styles*/ 
 }
 button:focus 
 {
-	outline:0;           /* Stops the blue outline on click*/
+	outline:0;           			/* Stops the blue outline on click*/
 }
 /*header*/
 .reduced-size
@@ -16,7 +16,7 @@ button:focus
 
 .col-sm-4
 {
-	text-align: center;	
+	text-align: center;			   /*targeting the column to center*/
 }
 /* Navbar*/
 .nav
@@ -32,52 +32,52 @@ button:focus
 }
 .nav a
 {
-	color: white;
+	color: white;                /*setting the text colour of link to white*/
 }
 
 .nav-item
 {
-	text-align: center;
-	margin: auto;
-	padding: 2px;
+	text-align: center;			/*aligning itmes to center*/
+	margin: auto;               /*aligning itmes to center*/
+	padding: 2px;               /*adding padding*/
 }
 /*Nav-menu and logo*/
 .right
 {
-	text-align: right;
+	text-align: right;          /*Right aliging the items inside*/
 }
 .navbar-brand
 {
-	font-weight: bold;
-	font-size:1.3rem;
+	font-weight: bold;           /*this seys the font effect of the brand logo tpc*/
+	font-size:1.3rem;            
 }
 
 /*Menu-button*/
 .menu-button
 {
-	background-color: #294a70;
-	font-weight: bold;
+	background-color: #294a70;   /*Color to the default*/
+	font-weight: bold;           
 	color: white;
 	font-size: 1.3rem;
 	margin-bottom: 3px;
 	border: none;
 }
-.navbar-toggler-icon
 
+.navbar-toggler-icon
 {
-	color: white;
+	color: white;                /*setting the three dashes to color white*/
 }
 .menu-button:hover
 {
-	background-color:#ffab1f; 
+	background-color:#ffab1f;    /*default hover color*/
 }
 .show-on-click
 {
-	display: none;
+	display: none;               /*The class that toggles the menu*/
 }
 .nav-menu
 {
-	width: 70%;
+	width: 70%;                  /*nav menu decrease width center align it */
 	background-color: #294a70;
 	text-align: center;
 	padding: 3px;
@@ -87,7 +87,7 @@ button:focus
 }
 .nav-menu-item
 {
-	text-align: center;
+	text-align: center;        /*formatting for each menu item*/
 	margin: auto;
 	padding: 2px;
 	font-size: 1rem;
@@ -95,12 +95,12 @@ button:focus
 }
 .nav-menu>a
 {
-	text-decoration:none;
+	text-decoration:none;      /*anchor tag text to not show underline*/
 	color: white;
 }
 .nav-menu-item:hover
 {
-	background-color: #ffab1f;
+	background-color: #ffab1f;    /*Default hover color*/
 }
 
 /*Dropdown menu additional features*/
