@@ -1,35 +1,42 @@
 /*styles for all of the webpage*/
+
 .basic
 {
 	font-family: 'Lora', serif; 	/*setting the basic font styles*/ 
 }
+
 button:focus 
 {
 	outline:0;           			/* Stops the blue outline on click*/
 }
+
 /*header*/
-.reduced-size
+#TPC-LOGO>span
 {
-	padding: 1rem;                 /*adding padding*/
-	border-radius: 100%;           /*making images circular*/
+	position: relative;              
+	top: 1.8rem;                   /*setting the logo near the bottom*/
+}
+#TPC-text
+{
+	font-size: 2.5rem;
+	font-weight: bolder;            /*Adjusing the font-size and weight*/
 }
 
-.col-sm-4
-{
-	text-align: center;			   /*targeting the column to center*/
-}
 /* Navbar*/
+
 .nav
 {
 	background-color: #294a70;   /*background of navigation bar*/
-	font-size: 1.2rem;           /*ssets the font size of menu items*/
-	padding: 4px;                /*set padding in menu*/
+	font-size: 1.4rem;           /*ssets the font size of menu items*/
+	padding: 0px;                /*set padding in menu*/
 	margin-bottom: 2px;
 }
+
 .nav-item:hover
 {
 	background-color: #ffab1f;   /* background colort of an itme on hover*/
 }
+
 .nav a
 {
 	color: white;                /*setting the text colour of link to white*/
@@ -41,24 +48,23 @@ button:focus
 	margin: auto;               /*aligning itmes to center*/
 	padding: 2px;               /*adding padding*/
 }
+
 /*Nav-menu and logo*/
+
 .right
 {
 	text-align: right;          /*Right aliging the items inside*/
 }
-.navbar-brand
-{
-	font-weight: bold;           /*this seys the font effect of the brand logo tpc*/
-	font-size:1.3rem;            
-}
+
 
 /*Menu-button*/
+
 .menu-button
 {
 	background-color: #294a70;   /*Color to the default*/
 	font-weight: bold;           
 	color: white;
-	font-size: 1.3rem;
+	font-size: 1.5rem;
 	margin-bottom: 3px;
 	border: none;
 }
@@ -67,14 +73,17 @@ button:focus
 {
 	color: white;                /*setting the three dashes to color white*/
 }
+
 .menu-button:hover
 {
 	background-color:#ffab1f;    /*default hover color*/
 }
+
 .show-on-click
 {
 	display: none;               /*The class that toggles the menu*/
 }
+
 .nav-menu
 {
 	width: 70%;                  /*nav menu decrease width center align it */
@@ -85,25 +94,29 @@ button:focus
 	margin-bottom: 12px;
 	border-radius: 4%;
 }
+
 .nav-menu-item
 {
 	text-align: center;        /*formatting for each menu item*/
 	margin: auto;
 	padding: 2px;
-	font-size: 1rem;
+	font-size: 1.2rem;
 	display: block;
 }
+
 .nav-menu>a
 {
 	text-decoration:none;      /*anchor tag text to not show underline*/
 	color: white;
 }
+
 .nav-menu-item:hover
 {
 	background-color: #ffab1f;    /*Default hover color*/
 }
 
 /*Dropdown menu additional features*/
+
 .dropdown-menu
 {
 	background-color: #294a70;   /*background of dropdown-menu*/	
@@ -117,10 +130,12 @@ button:focus
 
 .dropdown-item
 {
+	font-size: 1.3rem;
 	color:#ffffff;              /*text-color dropdown menu items*/
 }
 
 /*Carousel*/
+
 .carousel
 {
 	text-align: center; /*aligns the each item including the buttons */
@@ -133,7 +148,7 @@ button:focus
 
 .carousel-inner img
 {
-	width: 20%;        /*changing image size*/ 
+	width: 15%;        /*changing image size*/ 
 }
 
 .footerHeader
@@ -152,18 +167,148 @@ button:focus
 .footerHeader .container img
 {
 	width: 32px;      /*reducing the size of the icons*/
-
+	
 }
 
+/*Conten and Quicklinks*/
+/*Content*/
+/*QuickLinks*/
+#wrapper {
+	padding-left: 250px;
+	transition: all 0.4s ease 0s;
+}
+
+#sidebar-wrapper {
+	margin-left: -250px;
+	left: 250px;
+	width: 250px;
+	background: #000;
+	position: absolute;
+	height: 100%;
+	overflow-y: scroll;
+	z-index: 1000;
+	transition: all 0.4s ease 0s;
+}
+
+#wrapper.active {
+	padding-left: 0;
+}
+
+#wrapper.active #sidebar-wrapper {
+	left: 0;
+}
+
+.sidebar-nav {
+	position: absolute;
+	top: 0;
+	width: 250px;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.sidebar-nav li {
+	line-height: 40px;
+	text-indent: 20px;
+}
+
+.sidebar-nav li a {
+	color: #999999;
+	display: block;
+	text-decoration: none;
+	padding-left: 60px;
+}
+
+.sidebar-nav li a span:before {
+	position: absolute;
+	left: 0;
+	color: #41484c;
+	text-align: center;
+	width: 20px;
+	line-height: 18px;
+}
+
+.sidebar-nav li a:hover,
+.sidebar-nav li.active {
+	color: #fff;
+	background: rgba(255,255,255,0.2);
+	text-decoration: none;
+}
+
+.sidebar-nav li a:active,
+.sidebar-nav li a:focus {
+	text-decoration: none;
+}
+
+.sidebar-nav > .sidebar-brand {
+	height: 65px;
+	line-height: 60px;
+	font-size: 18px;
+}
+
+.sidebar-nav > .sidebar-brand a {
+	color: #999999;
+}
+
+.sidebar-nav > .sidebar-brand a:hover {
+	color: #fff;
+	background: none;
+}
+
+
+#menu-toggle {
+	text-decoration: none;
+}
+
+.btn-menu {
+	color: #000;
+} 
+
+.inset {
+	padding: 20px;
+}
+
+@media (max-width:767px) {
+
+	#wrapper {
+		padding-left: 0;
+	}
+
+	#sidebar-wrapper {
+		left: 0;
+	}
+
+	#wrapper.active {
+		position: relative;
+		left: 250px;
+	}
+
+	#wrapper.active #sidebar-wrapper {
+		left: 250px;
+		width: 250px;
+		transition: all 0.4s ease 0s;
+	}
+
+	#menu-toggle {
+		display: inline-block;
+	}
+
+	.inset {
+		padding: 15px;
+	}
+
+}
 /*media Queries to make the website mobile friendly*/
-@media (min-width: 676px)
+
+@media (min-width: 768px)
 {
 	.hide-if-large-screen
 	{
 		display:none;                   /* hides the logo on resize*/ 
 	}
 }
-@media (max-width: 676px)
+
+@media (max-width: 767px)
 {
 	.hide-if-small-screen
 	{
