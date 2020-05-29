@@ -10,12 +10,41 @@ button:focus
 	outline:0;           			/* Stops the blue outline on click*/
 }
 
+.col,.col-sm-3,.col-sm-9
+{
+	padding: 0;
+	width: auto;
+}
+.row
+{
+	margin: 0;
+}
+
+/*media Queries to make the website mobile friendly*/
+
+@media (min-width: 768px)
+{
+	.hide-if-large-screen
+	{
+		display:none;                   /* hides the logo on resize*/ 
+	}
+}
+
+@media (max-width: 767px)
+{
+	.hide-if-small-screen
+	{
+		display:none;                   /* hides on resize*/ 
+	}
+}
+
 /*header*/
 #TPC-LOGO>span
 {
 	position: relative;              
 	top: 1.8rem;                   /*setting the logo near the bottom*/
 }
+
 #TPC-text
 {
 	font-size: 2.5rem;
@@ -115,6 +144,11 @@ button:focus
 	background-color: #ffab1f;    /*Default hover color*/
 }
 
+.nav-menu-item:active
+{
+	background-color: #ffab1f; /*Default active colour*/
+}
+
 /*Dropdown menu additional features*/
 
 .dropdown-menu
@@ -126,6 +160,10 @@ button:focus
 {
 	color: #ffffff;             /*ovverides the links turining black*/
 	background-color: #ffab1f;  /* background-color on hover*/
+}
+.dropdown-item:active
+{
+	background-color: #ffab1f;
 }
 
 .dropdown-item
@@ -151,6 +189,107 @@ button:focus
 	width: 15%;        /*changing image size*/ 
 }
 
+
+/*Content and Quicklinks*/
+
+.content-and-links
+{
+	padding: 0;
+	margin:0;
+}
+
+/*Content*/
+.content-area
+{
+	margin-top: 4px;
+	width: 100%;
+}
+
+.content
+{
+	margin: 0.5rem;
+	padding: 0.5rem;
+	border-radius: 1%;
+	height: auto;
+	box-shadow: 2px 2px 5px 1px grey, -2px -2px 5px 1px grey;
+}
+
+/*QuickLinks*/
+
+.fixed
+{
+	position: fixed;
+	right: 8px;
+	z-index: 2;
+}
+
+.quick-links-button
+{
+	margin-top: 4px;
+	margin-right: 0px;
+	background-color: #ffab1f;   /*Color to the default*/
+	font-weight: bold;           
+	color: white;
+	font-size: 1.5rem;
+	margin-bottom: 3px;
+	border: none;
+}
+
+.quick-links
+{
+
+	margin-top: 4px;
+	background-color: rgba(0, 0, 0, 0.6);
+	font-size: 1.6rem;
+	border:solid 0.4rem #294a70;
+	border-radius: 5%;
+	padding: 0 15px;
+}
+
+.quick-links>a
+{
+	text-decoration:none;
+	color: black;
+}
+
+.quick-links-item
+{
+	display: block;
+	border-bottom:solid 0.2rem #ffffff;
+}
+
+.quick-links-item:active
+{
+	background-color: #ffab1f;
+	color: #ffffff
+}
+
+.quick-links-item:hover
+{
+	color: #ffffff;
+	background-color: #ffab1f;
+}
+
+.quick-links-item:nth-child(4)
+{
+	border:none;
+}
+
+.display-on-click
+{
+	display: inline-block; 
+}
+
+@media(max-width: 575px)
+{
+	.display-on-click
+	{
+		position: fixed;
+		right: 0;
+	}
+}
+
+/*Footer*/
 .footerHeader
 {
 	text-align: center;
@@ -160,158 +299,11 @@ button:focus
 
 .footerHeader iframe
 {
-	width: auto;  /* setting the size of the map to adjust according to the page*/
-	height: auto;  /* setting the size of the map to adjust according to the page*/
+	width: 30%;  /* setting the size of the map to adjust according to the page*/
+	height: 30%;  /* setting the size of the map to adjust according to the page*/
 }
 
 .footerHeader .container img
 {
-	width: 32px;      /*reducing the size of the icons*/
-	
-}
-
-/*Conten and Quicklinks*/
-/*Content*/
-/*QuickLinks*/
-#wrapper {
-	padding-left: 250px;
-	transition: all 0.4s ease 0s;
-}
-
-#sidebar-wrapper {
-	margin-left: -250px;
-	left: 250px;
-	width: 250px;
-	background: #000;
-	position: absolute;
-	height: 100%;
-	overflow-y: scroll;
-	z-index: 1000;
-	transition: all 0.4s ease 0s;
-}
-
-#wrapper.active {
-	padding-left: 0;
-}
-
-#wrapper.active #sidebar-wrapper {
-	left: 0;
-}
-
-.sidebar-nav {
-	position: absolute;
-	top: 0;
-	width: 250px;
-	list-style: none;
-	margin: 0;
-	padding: 0;
-}
-
-.sidebar-nav li {
-	line-height: 40px;
-	text-indent: 20px;
-}
-
-.sidebar-nav li a {
-	color: #999999;
-	display: block;
-	text-decoration: none;
-	padding-left: 60px;
-}
-
-.sidebar-nav li a span:before {
-	position: absolute;
-	left: 0;
-	color: #41484c;
-	text-align: center;
-	width: 20px;
-	line-height: 18px;
-}
-
-.sidebar-nav li a:hover,
-.sidebar-nav li.active {
-	color: #fff;
-	background: rgba(255,255,255,0.2);
-	text-decoration: none;
-}
-
-.sidebar-nav li a:active,
-.sidebar-nav li a:focus {
-	text-decoration: none;
-}
-
-.sidebar-nav > .sidebar-brand {
-	height: 65px;
-	line-height: 60px;
-	font-size: 18px;
-}
-
-.sidebar-nav > .sidebar-brand a {
-	color: #999999;
-}
-
-.sidebar-nav > .sidebar-brand a:hover {
-	color: #fff;
-	background: none;
-}
-
-
-#menu-toggle {
-	text-decoration: none;
-}
-
-.btn-menu {
-	color: #000;
-} 
-
-.inset {
-	padding: 20px;
-}
-
-@media (max-width:767px) {
-
-	#wrapper {
-		padding-left: 0;
-	}
-
-	#sidebar-wrapper {
-		left: 0;
-	}
-
-	#wrapper.active {
-		position: relative;
-		left: 250px;
-	}
-
-	#wrapper.active #sidebar-wrapper {
-		left: 250px;
-		width: 250px;
-		transition: all 0.4s ease 0s;
-	}
-
-	#menu-toggle {
-		display: inline-block;
-	}
-
-	.inset {
-		padding: 15px;
-	}
-
-}
-/*media Queries to make the website mobile friendly*/
-
-@media (min-width: 768px)
-{
-	.hide-if-large-screen
-	{
-		display:none;                   /* hides the logo on resize*/ 
-	}
-}
-
-@media (max-width: 767px)
-{
-	.hide-if-small-screen
-	{
-		display:none;                   /* hides on resize*/ 
-	}
+	width: 32px;      /*reducing the size of the icons*/	
 }

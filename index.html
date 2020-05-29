@@ -8,6 +8,7 @@
   <!-- Bootstrap CSS-->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <!-- fonts and addons-->
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
   <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&display=swap" rel="stylesheet">
   <!-- Optional CSS-->
   <link rel="stylesheet" type="text/css" href="CSS/styles.css">
@@ -15,23 +16,23 @@
 </head>
 <body class="basic">
 
-<!-- nav-menu-button brandLogo here-->
+  <!-- nav-menu-button brandLogo here-->
 
-<div class="navbar row">
-  <div class="hide-if-large-screen navbar-brand col">
-    <img class="" src="images/TPC_logo.jpeg" width="110px" height="85px"></img>
-  </div>
-  <div class="col right hide-if-large-screen">
-   <button class=" menu-button navbar-dark ">MENU   
-     <span class="navbar-toggler-icon">
-     </span>
-   </button>
-  </div>
-</div>
+  <div class="navbar row">
+    <div class="hide-if-large-screen navbar-brand col">
+      <img class="" src="images/TPC_logo.jpeg" width="110px" height="85px"></img>
+    </div>
+    <div class="col right hide-if-large-screen">
+     <button class=" menu-button navbar-dark ">MENU   
+       <span class="navbar-toggler-icon">
+       </span>
+     </button>
+   </div>
+ </div>
 
-<!-- Menu -->
+ <!-- Menu -->
 
-<nav class="show-on-click hide-if-large-screen nav-menu container-fluid">
+ <nav class="show-on-click hide-if-large-screen nav-menu container-fluid">
   <a href="#" role="button" class="nav-menu-item">Home</a>
   <a href="#" role="button" class="nav-menu-item">About us</a>
   <a href="#" role="button" class="nav-menu-item">Past recruiters</a>
@@ -60,7 +61,7 @@
 <nav class="justify-content-center hide-if-small-screen">
   <ul class="nav flex-fill">
     <li class="nav-item flex-fill active">
-      <a class="nav-link " href="#">Home <span class="sr-only">(current)</span></a>
+      <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
     </li>
     <li class="nav-item flex-fill ">
       <a class="nav-link" href="#">About us</a>
@@ -106,63 +107,44 @@
 </div>
 
 <!-- CONTENT and Quicklinks -->
-
-<!--dolphy insert quicklinks here-->
-<div id="wrapper">
-
-  <!-- Sidebar -->
-  <div id="sidebar-wrapper">
-    <nav id="spy">
-      <ul class="sidebar-nav nav">
-        <li class="sidebar-brand">
-          <a href="#home"><span class="fa fa-home solo">Home</span></a>
-        </li>
-        <li>
-          <a href="#page1" data-scroll>
-            <span class="fa fa-anchor solo">page 1</span>
-          </a>
-        </li>
-        <li>
-          <a href="#page2" data-scroll>
-            <span class="fa fa-anchor solo">page 2</span>
-          </a>
-        </li>
-        <li>
-          <a href="#page3" data-scroll>
-            <span class="fa fa-anchor solo">page 3</span>
-          </a>
-        </li>
-        <li>
-          <a href="#page4" data-scroll>
-            <span class="fa fa-anchor solo">page4 4</span>
-          </a>
-        </li>
-      </ul>
-    </nav>
+<div class="row container-fluid content-and-links">
+  <!-- content -->
+  <div class="col-sm-9 content-area">
+    <div class="content">
+      <h1>TPC home-page</h1>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed in cursus tortor. Nulla ante ipsum, faucibus interdum massa feugiat, volutpat rhoncus urna. Suspendisse eget velit non nisl interdum tincidunt porta sed magna. Etiam vel elementum dui, ac faucibus ante. Sed porta lorem pretium, cursus sem sit amet, luctus orci. Curabitur mattis hendrerit neque, vel semper enim placerat molestie. Fusce ex quam, aliquam sed libero vitae, vulputate aliquam augue.</p>
+    </div>
+  </div>
+  <!--quicklinks here-->
+  <div class="col-sm-3 fixed">
+    <div class="col right hide-if-large-screen">
+      <button class="quick-links-button">QuickLinks  
+      </button>
+    </div>
+    <div class="quick-links hide-if-small-screen">
+      <a href="#" role="button" class="quick-links-item">Home</a>
+      <a href="#" role="button" class="quick-links-item">About us</a>
+      <a href="#" role="button" class="quick-links-item">Past recruiters</a>
+      <a href="#" role="button" class="quick-links-item">Our team</a>
+    </div>
   </div>
 </div>
 
 <!-- FOOTER -->
 
 <footer>
-  <div class="footerHeader">
-    <div class="row">
-      <div class="container col-md-4">
-        <h3>Training and placement cell</h3>
-        <hr>
-      </div>
-      <div class="container col-md-4">
-        <h3>Our location</h3>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3428.94039639651!2d76.75529511443216!3d30.74817569194059!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390fed9326073ab9%3A0x5e1dcb772320cc08!2sUiet%20Block%201!5e0!3m2!1sen!2sjo!4v1588962341746!5m2!1sen!2sjo" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
-      </div>
-      <div class="container col-md-4">
-        <h3>Contact Us at</h3>
-        <h3>Email:tpc@gmail.com</h3>
-        <h4>Contact no. 123456789</h4>
-        <a href="#" ><img src="https://www.facebook.com/images/fb_icon_325x325.png" class="img-responsive"></a>
-        <a href="#" ><img src="https://lh3.googleusercontent.com/00APBMVQh3yraN704gKCeM63KzeQ-zHUi5wK6E9TjRQ26McyqYBt-zy__4i8GXDAfeys=w300" class="img-responsive" ></a>
-        <a href="#" ><img src="http://playbookathlete.com/wp-content/uploads/2016/10/twitter-logo-4.png" class="img-responsive" ></a>
-      </div>
+  <div class="footerHeader row">    
+    <div class="container col-md-6">
+      <h3>Our location</h3>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3428.94039639651!2d76.75529511443216!3d30.74817569194059!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390fed9326073ab9%3A0x5e1dcb772320cc08!2sUiet%20Block%201!5e0!3m2!1sen!2sjo!4v1588962341746!5m2!1sen!2sjo" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+    </div>
+    <div class="container col-md-6">
+      <h3>Contact Us at</h3>
+      <h3>Email:tpc@gmail.com</h3>
+      <h4>Contact no. 123456789</h4>
+      <a href="#"><i class="fa fa-facebook"></i></a>
+      <a href="#"><i class="fa fa-twitter"></i></a>
+      <a href="#"><i class="fa fa-linkedin"></i></a>
     </div>
   </div>
 </footer>
