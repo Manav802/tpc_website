@@ -10,7 +10,7 @@ button:focus
 	outline:0;           			/* Stops the blue outline on click*/
 }
 
-.col,.col-sm-3,.col-sm-9
+.col,.col-sm-3,.col-sm-9,
 {
 	padding: 0;
 	width: auto;
@@ -202,7 +202,7 @@ button:focus
 .content-area
 {
 	margin-top: 4px;
-	width: 100%;
+	display: inline-block;
 }
 
 .content
@@ -211,7 +211,7 @@ button:focus
 	padding: 0.5rem;
 	border-radius: 1%;
 	height: auto;
-	box-shadow: 2px 2px 5px 1px grey, -2px -2px 5px 1px grey;
+	box-shadow: 2px 2px 5px 1px grey,-2px -2px 5px 1px grey;
 }
 
 /*QuickLinks*/
@@ -219,16 +219,16 @@ button:focus
 .fixed
 {
 	position: fixed;
-	right: 8px;
-	z-index: 2;
+	padding: 0;
+	z-index: 1;
+	right: 0px;
 }
 
 .quick-links-button
 {
 	margin-top: 4px;
-	margin-right: 0px;
 	background-color: #ffab1f;   /*Color to the default*/
-	font-weight: bold;           
+	font-weight: bold;
 	color: white;
 	font-size: 1.5rem;
 	margin-bottom: 3px;
@@ -237,36 +237,33 @@ button:focus
 
 .quick-links
 {
-
 	margin-top: 4px;
-	background-color: rgba(0, 0, 0, 0.6);
+	background-color: rgba(0, 0, 0, 0.7);
 	font-size: 1.6rem;
-	border:solid 0.4rem #294a70;
-	border-radius: 5%;
 	padding: 0 15px;
 }
 
 .quick-links>a
 {
 	text-decoration:none;
-	color: black;
+	color: #ffffff;
 }
 
 .quick-links-item
 {
 	display: block;
-	border-bottom:solid 0.2rem #ffffff;
+	border-bottom:solid 0.1rem #ffffff;
 }
 
 .quick-links-item:active
 {
 	background-color: #ffab1f;
-	color: #ffffff
+
 }
 
 .quick-links-item:hover
 {
-	color: #ffffff;
+	color: black;
 	background-color: #ffab1f;
 }
 
@@ -290,20 +287,47 @@ button:focus
 }
 
 /*Footer*/
+
+#footer
+{
+	background-color: #2c3e50;  /*color of the footers background*/
+	position: relative;
+	margin-bottom: 0;
+	text-align: center;
+}
+
 .footerHeader
 {
-	text-align: center;
-	background-color: #294a70; /*color of the footers background*/
-	color:#ffffff;  /*text color to white*/
+	padding: 1rem;
+	color:#ffffff;             /*text color to white*/
 }
 
 .footerHeader iframe
 {
-	width: 30%;  /* setting the size of the map to adjust according to the page*/
-	height: 30%;  /* setting the size of the map to adjust according to the page*/
+	width: 70%;  /* setting the size of the map to adjust according to the page*/
+	height: 50%;  /* setting the size of the map to adjust according to the page*/
 }
 
-.footerHeader .container img
+.fa,.fas,.fab
 {
-	width: 32px;      /*reducing the size of the icons*/	
+	color: #9fa6bb;
+	font-size:1.8rem;
+}
+.fa:hover,.fas:hover,.fab:hover
+{
+	color: white;
+}
+
+.copyright-info
+{
+	font-weight: bolder;
+	text-align: center;
+	font-size: .9rem;
+	color: #2c3e50;
+	background-color:#e0e3eb;
+}
+
+.copyright-info>a
+{
+	color: #2c3e50;
 }
