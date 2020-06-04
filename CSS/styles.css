@@ -30,29 +30,6 @@ a:focus
 	margin: 0;
 }
 
-/*media Queries to make the website mobile friendly*/
-
-@media (min-width: 768px)
-{
-	.hide-if-large-screen
-	{
-		display:none;                   /* hides the logo on resize*/ 
-	}
-}
-
-@media (max-width: 767px)
-{
-	.hide-if-small-screen
-	{
-		display:none;                   /* hides on resize*/ 
-	}
-
-	.display-on-click
-	{
-		display: inline-block;
-	}
-}
-
 /*header*/
 #TPC-LOGO>span
 {
@@ -122,10 +99,6 @@ a:focus
 	background-color:#ffab1f;    /*default hover color*/
 }
 
-.show-on-click
-{
-	display: none;               /*The class that toggles the menu*/
-}
 
 .nav-menu
 {
@@ -286,7 +259,6 @@ a:focus
 {
 	border:none;
 }
-
 /*Footer*/
 
 #footer
@@ -332,4 +304,21 @@ a:focus
 .copyright-info>a
 {
 	color: #2c3e50;
+}
+/*media Queries to make the website mobile friendly*/
+
+@media (min-width: 768px)
+{
+	.hide-if-large-screen
+	{
+		display: none;                 /* hides the logo on resize*/ 
+	}
+}
+
+@media (max-width: 767px)
+{
+	.hide-if-small-screen
+	{
+		display:none;                   /* hides on resize*/ 
+	}
 }
