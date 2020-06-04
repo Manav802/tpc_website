@@ -2,12 +2,22 @@
 
 .basic
 {
-	font-family: 'Lora', serif; 	/*setting the basic font styles*/ 
+	font-family: 'Playfair Display', serif; /*setting the basic font styles*/ 
+	
 }
 
+.basic-text-font
+{
+	font-family: 'Roboto', sans-serif;
+}
 button:focus 
 {
 	outline:0;           			/* Stops the blue outline on click*/
+}
+
+a:focus
+{
+	outline: 0;                     /*stops the outline on click*/
 }
 
 .col,.col-sm-3,.col-sm-9,
@@ -36,6 +46,11 @@ button:focus
 	{
 		display:none;                   /* hides on resize*/ 
 	}
+
+	.display-on-click
+	{
+		display: inline-block;
+	}
 }
 
 /*header*/
@@ -48,7 +63,6 @@ button:focus
 #TPC-text
 {
 	font-size: 2.5rem;
-	font-weight: bolder;            /*Adjusing the font-size and weight*/
 }
 
 /* Navbar*/
@@ -201,6 +215,7 @@ button:focus
 /*Content*/
 .content-area
 {
+	text-align: justify;
 	margin-top: 4px;
 	display: inline-block;
 }
@@ -211,7 +226,7 @@ button:focus
 	padding: 0.5rem;
 	border-radius: 1%;
 	height: auto;
-	box-shadow: 2px 2px 5px 1px grey,-2px -2px 5px 1px grey;
+	box-shadow: 2px 2px 3px  #83C0E6,-2px -2px 3px  #83C0E6;
 }
 
 /*QuickLinks*/
@@ -221,7 +236,7 @@ button:focus
 	position: fixed;
 	padding: 0;
 	z-index: 1;
-	right: 0px;
+	right: 0px; 
 }
 
 .quick-links-button
@@ -240,7 +255,7 @@ button:focus
 	margin-top: 4px;
 	background-color: rgba(0, 0, 0, 0.7);
 	font-size: 1.6rem;
-	padding: 0 15px;
+	padding: 3px 15px;
 }
 
 .quick-links>a
@@ -272,20 +287,6 @@ button:focus
 	border:none;
 }
 
-.display-on-click
-{
-	display: inline-block; 
-}
-
-@media(max-width: 575px)
-{
-	.display-on-click
-	{
-		position: fixed;
-		right: 0;
-	}
-}
-
 /*Footer*/
 
 #footer
@@ -304,6 +305,7 @@ button:focus
 
 .footerHeader iframe
 {
+	box-sizing: content-box;
 	width: 70%;  /* setting the size of the map to adjust according to the page*/
 	height: 50%;  /* setting the size of the map to adjust according to the page*/
 }
