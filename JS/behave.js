@@ -24,7 +24,7 @@ $(document).ready(function(){
 $("#about").click(
   	function()
   	{
-  		$(".content").load("about #page-content");
+  		$(".content").load("abou.html #page-content");
   	});
 });
 
