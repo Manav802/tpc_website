@@ -18,3 +18,14 @@ $("#menu-and-logo").on("mouseleave",function ()
 {
 	$(".nav-menu").fadeOut(); 
 })
+
+
+$(document).ready(function(){
+$("#about").click(
+  	function()
+  	{
+  		$(".content").load("about #page-content");
+  	});
+});
+
+
