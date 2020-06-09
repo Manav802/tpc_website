@@ -1,6 +1,6 @@
 $(".menu-button").on("click",function () 
 {
-	$(".nav-menu").fadeToggle();      //while in mobile view this toggle the menu display
+	$(".nav-menu").fadeToggle(1000,"swing");      //while in mobile view this toggle the menu display
 })
 
 $(".quick-links-button").on("click",function () 
@@ -16,16 +16,18 @@ $("#quick-links ").on("mouseleave",function ()
 
 $("#menu-and-logo").on("mouseleave",function ()
 {
-	$(".nav-menu").fadeOut(); 
+	$(".nav-menu").fadeOut(1000,"swing"); 
 })
 
 
-$(document).ready(function(){
-$("#about").click(
-  	function()
-  	{
-  		$(".content").load("about.html #page-content");
-  	});
-});
 
+function setWebpage() 
+{
+	$(".nav-menu a,.nav a,.quick-links a").on("click",function()
+	{
+		var name=$(this).attr("name");
+		$(".content").load(name+".html"+" #page-content");
+	});
+}
 
+setWebpage();

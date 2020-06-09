@@ -3,13 +3,14 @@
 .basic
 {
 	font-family: 'Playfair Display', serif; /*setting the basic font styles*/ 
-	
+	padding-top: 55px;
 }
 
 .basic-text-font
 {
 	font-family: 'Roboto', sans-serif;
 }
+
 button:focus 
 {
 	outline:0;           			/* Stops the blue outline on click*/
@@ -31,25 +32,44 @@ a:focus
 }
 
 /*header*/
-#TPC-LOGO>span
+.TPC-LOGO
 {
-	position: relative;              
-	top: 1.8rem;                   /*setting the logo near the bottom*/
+	position: relative;
+	text-align: center;
+	display: inline-block;
+	font-family: 'Montserrat', sans-serif;
 }
 
-#TPC-text
+
+.TPC-text
 {
+	position: relative;
+	margin: auto;
+	top: 10px;
 	font-size: 2.5rem;
+	font-weight: bold;
 }
 
 /* Navbar*/
+.navbar
+{
+	background-color: #ffffff;
+} 
 
-.nav
+.bg-color
 {
 	background-color: #294a70;   /*background of navigation bar*/
+}
+.navbar
+{
 	font-size: 1.4rem;           /*ssets the font size of menu items*/
 	padding: 0px;                /*set padding in menu*/
 	margin-bottom: 2px;
+}
+.navbar .container-fluid
+{
+	padding: 0px;
+	margin:0;
 }
 
 .nav-item:hover
@@ -57,7 +77,7 @@ a:focus
 	background-color: #ffab1f;   /* background colort of an itme on hover*/
 }
 
-.nav a
+.nav a,.nav span
 {
 	color: white;                /*setting the text colour of link to white*/
 }
@@ -66,7 +86,6 @@ a:focus
 {
 	text-align: center;			/*aligning itmes to center*/
 	margin: auto;               /*aligning itmes to center*/
-	padding: 2px;               /*adding padding*/
 }
 
 /*Nav-menu and logo*/
@@ -120,7 +139,7 @@ a:focus
 	display: block;
 }
 
-.nav-menu>a
+.nav-menu>a,.nav-menu>li
 {
 	text-decoration:none;      /*anchor tag text to not show underline*/
 	color: white;
@@ -173,10 +192,15 @@ a:focus
 
 .carousel-inner img
 {
-	width: 15%;        /*changing image size*/ 
+	width: 70%;
 }
 
-
+.carousel-control-prev-icon,
+.carousel-control-next-icon
+{
+	height:30%;
+	width: 30%;
+}
 /*Content and Quicklinks*/
 
 .content-and-links
@@ -202,6 +226,15 @@ a:focus
 	box-shadow: 2px 2px 3px  #83C0E6,-2px -2px 3px  #83C0E6;
 }
 
+.content .carousel-inner img
+{
+	width: 100%;
+}
+.content .carousel-control-next button
+{
+	margin: auto;
+	margin-bottom: 0;
+} 
 /*QuickLinks*/
 
 .fixed
@@ -282,11 +315,24 @@ a:focus
 	height: 50%;  /* setting the size of the map to adjust according to the page*/
 }
 
+.footerHeader .col
+{
+	padding: 0.5rem;
+}
+
 .fa,.fas,.fab
 {
 	color: #9fa6bb;
 	font-size:1.8rem;
 }
+
+/*.content .fa-chevron-left,.content .fa-chevron-right
+{
+	color: black;
+	font-size: 3rem;
+	font-weight: bolder;
+}*/
+
 .fa:hover,.fas:hover,.fab:hover
 {
 	color: white;
@@ -311,8 +357,10 @@ a:focus
 {
 	.hide-if-large-screen
 	{
-		display: none;                 /* hides the logo on resize*/ 
+		display: none;                 /* hides the logo on resize*/
 	}
+
+
 }
 
 @media (max-width: 767px)
@@ -320,5 +368,23 @@ a:focus
 	.hide-if-small-screen
 	{
 		display:none;                   /* hides on resize*/ 
+	}
+	.basic
+	{
+		padding:0; 
+	}
+
+	.carousel-inner img
+	{
+		width: 90%;
+	}
+
+}
+
+@media(max-width: 842px)
+{
+	.TPC-text
+	{
+		font-size: 2.2rem;
 	}
 }
