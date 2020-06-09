@@ -226,9 +226,14 @@ a:focus
 	box-shadow: 2px 2px 3px  #83C0E6,-2px -2px 3px  #83C0E6;
 }
 
+.content .carousel-inner
+{
+	text-align: left; /*aligns the images */
+}
+
 .content .carousel-inner img
 {
-	width: 100%;
+	width: 85%;
 }
 .content .carousel-control-next button
 {
